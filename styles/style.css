@@ -5,7 +5,6 @@
 * {
     font-family: 'Work Sans', sans-serif;
 }
-
 .btn-primary {
     border-radius: 6px;
     background: #FF900E;
@@ -17,6 +16,12 @@
     border: none;
     padding: 15px 20px;
     cursor: pointer;
+}
+.text-light-grey {
+    color: #727272;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 /* Header Tag */
@@ -31,7 +36,6 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
 .nav-title {
     color: #131313;
     font-size: 45px;
@@ -39,11 +43,9 @@ nav {
     font-weight: 700;
     line-height: normal;
 }
-
 nav>ul {
     display: flex;
 }
-
 nav li {
     list-style-type: none;
     margin-right: 30px;
@@ -54,7 +56,6 @@ nav li {
     font-weight: 500;
     line-height: 26px;
 }
-
 nav a {
     text-decoration: none;
     color: #424242;
@@ -71,7 +72,6 @@ nav a {
     text-align: center;
     margin: 0 auto;
 }
-
 .banner-title {
     color: #131313;
     text-align: center;
@@ -80,22 +80,10 @@ nav a {
     font-weight: 700;
     line-height: normal;
 }
-
-.banner-description {
-    color: #727272;
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-}
-
 .banner img {
     margin-top: 20px;
     width: 100%
 }
-
 /* Main styles */
 
 .main {
@@ -109,22 +97,18 @@ nav a {
     margin-left: 280px;
     margin-top: 85px;
 }
-
 .teams-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-
 .teams-content {
     padding-right: 70px;
     padding-left: 70px;
 }
-
 .teams-title {
     font-size: 45px;
 }
-
 .quick-list {
     color: #727272;
     font-family: Work Sans;
@@ -143,8 +127,18 @@ nav a {
         padding: 20px;
     }
 
-    nav {
+    nav,.teams-container {
         flex-direction: column;
+    }
+    .teams-container{
+        margin-left: 5px;   
+    }
+    .teams-img-container {        
+        grid-template-columns: 1fr ;          
+    }
+    .teams-content {
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
 
@@ -153,7 +147,7 @@ nav a {
         padding: 50px;
     }
 
-    nav {
+    nav,.teams-container {
         flex-direction: column;
     }
 }
